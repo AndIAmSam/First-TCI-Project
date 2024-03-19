@@ -10,7 +10,8 @@ import { IoSearch } from "react-icons/io5";
 
 const menus = [
   { name: "Inicio", link: "/home", icon: MdOutlineDashboard },
-  { name: "CRUD", link: "/crud", icon: FiFolder },
+  { name: "Crear Tarea", link: "/taskform", icon: FiFolder },
+  { name: "Mis Tareas", link: "/taskpage", icon: FiFolder },
   { name: "Buscar", link: "/search", icon: IoSearch },
   { name: "Team", link: "/team", icon: FiUsers },
   { name: "Calificación", link: "/score", icon: AiOutlineHeart, margin: true },
