@@ -64,8 +64,9 @@ export const TaskContextProvider = ({ children }) => {
   const toggleTaskDone = async (id) => {
     try {
       const taskFound = tasks.find((task) => task.id === id);
-      await toggleTaskDoneRequest(id, {done: taskFound.done === 0 ? 1 : 0});
+      await toggleTaskDoneRequest(id, {done: taskFound.done === false ? true : false});
       setTasks(tasks.map(task => task.id === id ? {... task, done: !task.done} : task));
+      console.log("si", tasks[0].done);
     } catch (error) {
       console.log(error);
     }

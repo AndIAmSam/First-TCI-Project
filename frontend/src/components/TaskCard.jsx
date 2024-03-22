@@ -15,7 +15,7 @@ function TaskCard({ task }) {
     <div className="bg-gray-800 shadow-lg p-8 m-5 rounded-xl">
       <h2>{task.title}</h2>
       <p>{task.description}</p>
-      <p>{task.done === 1 ? "✅️" : "❌"}</p>
+      <p>{task.done === true ? "✅️" : "❌"}</p>
       <p>{task.createdAt}</p>
       <hr className="mt-10" />
       <button
