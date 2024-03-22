@@ -21,6 +21,7 @@ function TaskCard({ task }) {
       <button
         onClick={() => deleteTask(task.id)}
         className="m-7 p-3 rounded-lg transition duration-500 ease-in-out bg-red-500 transform hover:-translate-y-1 hover:scale-110"
+        title={"Eliminar"}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -40,6 +41,7 @@ function TaskCard({ task }) {
       <button
         onClick={() => navigate(`/edit/${task.id}`)}
         className="m-7 p-3 rounded-lg transition duration-500 ease-in-out bg-teal-500 hover:bg-purple-700 transform hover:-translate-y-1 hover:scale-110"
+        title={"Editar"}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -59,6 +61,7 @@ function TaskCard({ task }) {
       <button
         onClick={() => handleDone(task.done)}
         className="m-7 p-3 rounded-lg transition duration-500 ease-in-out bg-teal-500 hover:bg-purple-700 transform hover:-translate-y-1 hover:scale-110"
+        title={"Marcar como completada"}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

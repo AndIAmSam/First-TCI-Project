@@ -6,6 +6,7 @@ import { Form, Formik } from "formik";
 import { useTasks } from "../context/TaskProvider";
 import { useParams, useNavigate } from "react-router-dom";
 import "./../styles/Pages.css";
+import AnimatedFigures from "../components/AnimatedFigures";
 
 const TaskEdit = () => {
   const { getTask, updateTask } = useTasks();
@@ -41,23 +42,7 @@ const TaskEdit = () => {
           animate={{ x: 0, y: "0vw", opacity: 1, scale: 1 }}
           transition={{ duration: 0.3 }}
         >
-          <motion.div
-            initial={{ opacity: 1, rotate: 0 }}
-            animate={{ opacity: 1, rotate: 360 }}
-            transition={{
-              duration: 20,
-              repeat: Infinity,
-              repeatType: "loop",
-              ease: "linear",
-            }}
-            while={{ rotate: 360 }}
-            className="absolute bottom-0 right-0 p-8 "
-          >
-            <FaReact
-              size={70}
-              className="transition duration-500 ease-in-out text-purple-700 hover:text-teal-500 transform hover:-translate-y-1 hover:scale-125"
-            />
-          </motion.div>
+          <AnimatedFigures />
           <h1 className="text-5xl mb-20">EDIT TASK</h1>
           {/* Formulario para agregar nuevos datos */}
           <div className="mb-6">

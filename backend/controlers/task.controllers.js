@@ -27,6 +27,22 @@ export const getTask = async (req, res) => {
   }
 };
 
+export const getSearchedTasks = async (req, res) => {
+  try {
+    const { query } = req.query;
+    const [result] = await pool.query(
+      "SELECT * FROM tasks WHERE title LIKE ? OR description LIKE ? ORDER BY createdAt ASC",
+      [`%${query}%`, `%${query}%`]
+    );
+    
+ 
+    res.json(result);
+  } catch (error) {
+    return res.status(500).json({ message: error.message });
+  }
+ };
+ 
+
 export const createTasks = async (req, res) => {
   try {
     const { title, description } = req.body;

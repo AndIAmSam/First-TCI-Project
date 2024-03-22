@@ -5,19 +5,32 @@ import { FaReact } from "react-icons/fa6";
 import TaskCard from "../components/TaskCard";
 import { useTasks } from "../context/TaskProvider";
 import "./../styles/Pages.css";
+import AnimatedFigures from "../components/AnimatedFigures";
+
+const miniDraw = {
+  hidden: { pathLength: 0, opacity: 0 },
+  visible: (i) => {
+    const delay = 0 + i * 0.5;
+    return {
+      pathLength: 1,
+      opacity: 1,
+      transition: {
+        pathLength: { delay, type: "spring", duration: 3, bounce: 0 },
+        opacity: { delay, duration: 0.01 },
+      },
+    };
+  },
+};
 
 const TaskPage = () => {
-  
   const { tasks, loadTasks } = useTasks();
-
 
   useEffect(() => {
     loadTasks();
   }, []);
 
   function renderMain() {
-
-    if (tasks.length === 0) return (<h1>No tasks yet</h1>);
+    if (tasks.length === 0) return <h1>No tasks yet</h1>;
 
     return tasks.map((task) => <TaskCard task={task} key={task.id} />);
   }
@@ -31,29 +44,12 @@ const TaskPage = () => {
           animate={{ x: 0, y: "0vw", opacity: 1, scale: 1 }}
           transition={{ duration: 0.3 }}
         >
-          <motion.div
-            initial={{ opacity: 1, rotate: 0 }}
-            animate={{ opacity: 1, rotate: 360 }}
-            transition={{
-              duration: 20,
-              repeat: Infinity,
-              repeatType: "loop",
-              ease: "linear",
-            }}
-            while={{ rotate: 360 }}
-            className="absolute bottom-0 right-0 p-8 "
-          >
-            <FaReact
-              size={70}
-              className="transition duration-500 ease-in-out text-purple-700 hover:text-teal-500 transform hover:-translate-y-1 hover:scale-125"
-            />
-          </motion.div>
-          <h1 className="text-5xl mb-20">CRUD</h1>
+          <AnimatedFigures />
+          <h1 className="text-5xl mb-20">Todas tus tareas</h1>
           {/* Contenido */}
           <div className="mb-6 grid grid-cols-3 overflow-x-auto">
             {renderMain()}
           </div>
-          {/* Lista de datos */}
         </motion.div>
       </div>
     </Layout>

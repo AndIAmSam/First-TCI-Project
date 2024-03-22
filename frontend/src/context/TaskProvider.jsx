@@ -6,6 +6,7 @@ import { createTaskRequest } from "../api/tasks.api";
 import { getTaskRequest } from "../api/tasks.api";
 import { updateTaskRequest } from "../api/tasks.api";
 import { toggleTaskDoneRequest } from "../api/tasks.api";
+import { searchTasksRequest } from "../api/tasks.api";
 
 export const useTasks = () => {
   const context = useContext(TaskContext);
@@ -64,11 +65,26 @@ export const TaskContextProvider = ({ children }) => {
   const toggleTaskDone = async (id) => {
     try {
       const taskFound = tasks.find((task) => task.id === id);
-      await toggleTaskDoneRequest(id, {done: taskFound.done === false ? true : false});
-      setTasks(tasks.map(task => task.id === id ? {... task, done: !task.done} : task));
+      await toggleTaskDoneRequest(id, {
+        done: taskFound.done === false ? true : false,
+      });
+      setTasks(
+        tasks.map((task) =>
+          task.id === id ? { ...task, done: !task.done } : task
+        )
+      );
       console.log("si", tasks[0].done);
     } catch (error) {
       console.log(error);
+    }
+  };
+
+  const searchTasks = async (query) => {
+    try {
+      const response = await searchTasksRequest(query);
+      return response.data;
+    } catch (error) {
+      console.error(error);
     }
   };
 
@@ -82,6 +98,7 @@ export const TaskContextProvider = ({ children }) => {
         getTask,
         updateTask,
         toggleTaskDone,
+        searchTasks,
       }}
     >
       {children}
