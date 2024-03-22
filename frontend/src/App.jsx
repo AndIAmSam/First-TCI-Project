@@ -1,5 +1,5 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Sidebar from "./navigation/Sidebar";
 import Home from "./pages/Home";
 import Configuration from "./pages/Configuration";
@@ -17,7 +17,7 @@ export default function App() {
     <div>
       <TaskContextProvider>
         <Routes>
-          <Route path="/" element={<Sidebar />} />
+          <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" element={<Home />} />
           <Route path="/taskform" element={<TaskForm />} />
           <Route path="/taskpage" element={<TaskPage />} />

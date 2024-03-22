@@ -37,23 +37,27 @@ const TaskForm = () => {
             >
               {({ handleChange, handleSubmit, values, isSubmitting }) => (
                 <Form onSubmit={handleSubmit}>
-                  <label>Title</label>
-                  <input
-                    type="text"
-                    name="title"
-                    placeholder="Write a title"
-                    onChange={handleChange}
-                    value={values.title}
-                  ></input>
+                  <div className="flex flex-col">
+                    <label>Title</label>
+                    <input
+                      type="text"
+                      name="title"
+                      placeholder="Write a title"
+                      onChange={handleChange}
+                      value={values.title}
+                      className="mb-10 mt-5 bg-gray-800 rounded-md px-4 py-2 text-white focus:outline-none focus:ring focus:border-teal-500"
+                    ></input>
 
-                  <label>Description</label>
-                  <textarea
-                    name="description"
-                    rows="3"
-                    placeholder="Write a description"
-                    onChange={handleChange}
-                    value={values.description}
-                  ></textarea>
+                    <label>Description</label>
+                    <textarea
+                      name="description"
+                      rows="3"
+                      placeholder="Write a description"
+                      onChange={handleChange}
+                      value={values.description}
+                      className="mt-5 bg-gray-800 rounded-md px-4 py-2 text-white focus:outline-none focus:ring focus:border-teal-500"
+                    ></textarea>
+                  </div>
                   <button
                     type="submit"
                     disabled={isSubmitting}
