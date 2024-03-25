@@ -9,22 +9,17 @@ const Team = () => {
   const teamMembers = [
     {
       name: "Samuel Flores",
-      position: "UI/UX Designer",
+      position: "Developer",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
-      name: "Samuel Flores",
-      position: "Frontend Developer",
+      name: "Carlos García",
+      position: "Developer",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
-      name: "Samuel Flores",
-      position: "Backend Programmer",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-      name: "Samuel Flores",
-      position: "Database Administrator",
+      name: "Leonardo Cortéz",
+      position: "Developer",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
   ];

@@ -22,8 +22,8 @@ function AnimatedFigures() {
     <div>
       <div className="absolute -top-9 left-1 flex flex-col justify-center items-center mt-10 bg-slate-900 rounded-xl">
             <motion.svg
-              width="1064"
-              height="30"
+             width="1064"
+             height="30"
               viewBox="0 0 600 600"
               initial="hidden"
               animate="visible"

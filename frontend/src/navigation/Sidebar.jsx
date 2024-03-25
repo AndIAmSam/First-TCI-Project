@@ -15,7 +15,6 @@ const menus = [
   { name: "Buscar", link: "/search", icon: IoSearch },
   { name: "Team", link: "/team", icon: FiUsers },
   { name: "Calificación", link: "/score", icon: AiOutlineHeart, margin: true },
-  { name: "Configuración", link: "/configuration", icon: RiSettings4Line },
 ];
 
 const Sidebar = () => {
