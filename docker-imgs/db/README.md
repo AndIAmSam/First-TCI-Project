@@ -4,7 +4,7 @@
 To create the MYSQL database in the MYSQL_CONTAINER container
 
 ```
-docker compose -f dockerDB-compose.yml up -d
+docker compose -f dockerDB.yml up -d
 ```
 
 ---
