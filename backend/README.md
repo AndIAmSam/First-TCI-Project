@@ -1,5 +1,5 @@
 Run this command on this directory
-# Buiolding docker file
+# Building docker file
 ```
 docker build -t backend .
 ```
