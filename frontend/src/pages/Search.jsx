@@ -47,7 +47,7 @@ const Search = () => {
             <input
               type="text"
               value={searchTerm}
-              placeholder="Ingrese el nombre del usuario"
+              placeholder="Busca tu tarea"
               onChange={(e) => setSearchTerm(e.target.value)}
               className="bg-gray-800 rounded-md px-4 py-2 text-white focus:outline-none focus:ring focus:border-teal-500"
             />
