@@ -1,3 +1,4 @@
+Run this command on this directory
 # Buiolding docker file
 ```
 docker build -t backend .
