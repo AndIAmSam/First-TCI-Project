@@ -16,7 +16,20 @@ services:
     container_name: back
     networks:
       - net
+  
+  database:
+    build: ./database
+    image: database
+    container_name: db
+    networks:
+      - net
+    volumes:
+      - db_data:/var/lib/mysql
 
 networks:
   net:
     external: true
+
+volumes:
+  db_data:
+  
