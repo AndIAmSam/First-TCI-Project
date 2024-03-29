@@ -1,61 +1,62 @@
-# Sólo para desarrollo
+# Development Only
 
-# Configuración Técnica del Proyecto
+# Project Technical Configuration
 
 ## Frontend
 
 - **Framework:** ReactJS
 - **Styling:** Tailwind CSS
 - **Bundler:** Vite
-- **HTTP Client:** Axios (para la API)
+- **HTTP Client:** Axios (for the API)
 
 ## Backend
 
-- **Entorno de ejecución:** Node.js
+- **Runtime Environment:** Node.js
 - **Framework:** Express.js
 - **Logging:** Morgan
-- **Auto-reloading:** Nodemon (sólo para el desarrollo)
+- **Auto-reloading:** Nodemon (for development only)
 
-## Base de Datos
+## Database
 
-- **Gestor de Base de Datos:** MySQL
+- **Database Management System:** MySQL
 
-## Estructura del Proyecto
+## Project Structure
 
-El proyecto sigue una estructura típica de aplicaciones web modernas, con el frontend y el backend separados en directorios distintos.
+The project follows a typical structure of modern web applications, with the frontend and backend separated into different directories.
 
-├── frontend/ # Directorio del Frontend
-│ ├── src/ # Código fuente del Frontend
-│ ├── public/ # Archivos públicos del Frontend
-│ ├── package.json # Dependencias y scripts del Frontend
-│ └── ...
+├── frontend/ # Frontend Directory
+│   ├── src/ # Frontend Source Code
+│   ├── public/ # Public files of the Frontend
+│   ├── package.json # Frontend Dependencies and Scripts
+│   └── ...
 │
-├── backend/ # Directorio del Backend
-│ ├── src/ # Código fuente del Backend
-│ ├── package.json # Dependencias y scripts del Backend
-│ └── ...
+├── backend/ # Backend Directory
+│   ├── src/ # Backend Source Code
+│   ├── package.json # Backend Dependencies and Scripts
+│   └── ...
 │
 └── ...
 
-## Instrucciones para Ejecutar el Proyecto
+## Instructions to Run the Project
 
-1. **Configuración del Entorno:**
+1. **Environment Setup:**
 
-   - Asegúrese de tener Node.js y npm instalados en su sistema.
-   - Instale las dependencias del frontend y el backend ejecutando `npm install` dentro de los directorios correspondientes.
+   - Make sure you have Node.js and npm installed on your system.
+   - Install frontend and backend dependencies by running `npm install` within the corresponding directories.
 
-2. **Configuración de la Base de Datos:**
+2. **Database Setup:**
 
-   - Asegúrese de tener un servidor MySQL en ejecución.
-   - Configure las credenciales de acceso a la base de datos en el backend según sea necesario.
+   - Ensure you have a MySQL server running.
+   - Configure database access credentials in the backend as needed.
 
-3. **Ejecución del Backend:**
+3. **Running the Backend:**
 
-   - Para iniciar el servidor backend, ejecute el siguiente comando dentro del directorio utilice Nodemon para el desarrollo ejecutando `backend` : `npm run dev`.
+   - To start the backend server, run the following command within the `backend` directory: `npm run dev`.
 
-4. **Ejecución del Frontend:**
+4. **Running the Frontend:**
 
-   - Para iniciar la aplicación frontend, ejecute el siguiente comando dentro del directorio `frontend`: `npm run dev`.
+   - To start the frontend application, run the following command within the `frontend` directory: `npm run dev`.
 
-5. **Acceso a la Aplicación:**
-   - Una vez que los servidores estén en funcionamiento, acceda a la aplicación a través de su navegador web visitando la URL proporcionada por el servidor de desarrollo.
+5. **Accessing the Application:**
+
+   - Once the servers are up and running, access the application via your web browser by visiting the URL provided by the development server.
