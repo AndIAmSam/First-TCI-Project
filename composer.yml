@@ -18,6 +18,8 @@ services:
       - "3000:3000"
     networks:
       - net
+    depends_on:
+      - database
   
   database:
     build: ./database
@@ -30,7 +32,6 @@ services:
 
 networks:
   net:
-    external: true
 
 volumes:
   db_data:
