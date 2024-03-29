@@ -51,7 +51,7 @@ El proyecto sigue una estructura típica de aplicaciones web modernas, con el fr
 
 3. **Ejecución del Backend:**
 
-   - Para iniciar el servidor backend, ejecute el siguiente comando dentro del directorio utilice Nodemon para el desarrollo ejecutando `frontend` : `npm run dev`.
+   - Para iniciar el servidor backend, ejecute el siguiente comando dentro del directorio utilice Nodemon para el desarrollo ejecutando `backend` : `npm run dev`.
 
 4. **Ejecución del Frontend:**
 
