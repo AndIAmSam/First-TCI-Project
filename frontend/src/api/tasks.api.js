@@ -1,26 +1,27 @@
 import axios from "axios";
+import { url } from "../../config.js";
 
 export const getTasksRequest = async () => 
-  await axios.get(`${process.env.REACT_APP_BACKEND_URL}/tasks`);
+  await axios.get(`${url}/tasks`);
 
 export const createTaskRequest = async (task) => 
-  await axios.post(`${process.env.REACT_APP_BACKEND_URL}/tasks`, task);
+  await axios.post(`${url}/tasks`, task);
 
 export const deleteTaskRequest = async (id) =>
-  await axios.delete(`${process.env.REACT_APP_BACKEND_URL}/tasks/${id}`);
+  await axios.delete(`${url}/tasks/${id}`);
 
 export const getTaskRequest = async (id) =>
-  await axios.get(`${process.env.REACT_APP_BACKEND_URL}/${id}`);
+  await axios.get(`${url}/${id}`);
 
   export const updateTaskRequest = async (id, newFields) =>
-  await axios.put(`${process.env.REACT_APP_BACKEND_URL}/tasks/${id}`, newFields);
+  await axios.put(`${url}/tasks/${id}`, newFields);
 
 export const toggleTaskDoneRequest = async (id, done) => {
   console.warn(done, "si llega")
-  await axios.put(`${process.env.REACT_APP_BACKEND_URL}/tasks/${id}`, done);
+  await axios.put(`${url}/tasks/${id}`, done);
 }
 
 export const searchTasksRequest = async (search) =>
-  await axios.get(`${process.env.REACT_APP_BACKEND_URL}/tasks/search?query=${search}`);
+  await axios.get(`${url}/tasks/search?query=${search}`);
 
 
