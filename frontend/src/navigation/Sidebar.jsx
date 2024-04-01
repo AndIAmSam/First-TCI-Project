@@ -14,7 +14,7 @@ const menus = [
   { name: "Mis Tareas", link: "/taskpage", icon: FiFolder },
   { name: "Buscar", link: "/search", icon: IoSearch },
   { name: "Team", link: "/team", icon: FiUsers },
-  { name: "Calificación", link: "/score", icon: AiOutlineHeart, margin: true },
+  // { name: "Calificación", link: "/score", icon: AiOutlineHeart, margin: true },
 ];
 
 const Sidebar = () => {

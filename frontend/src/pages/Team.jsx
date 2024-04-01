@@ -10,17 +10,17 @@ const Team = () => {
     {
       name: "Samuel Flores",
       position: "Developer",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
       name: "Carlos García",
       position: "Developer",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
       name: "Leonardo Cortéz",
       position: "Developer",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      // description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
   ];
 
