@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../navigation/Layout";
 import { motion } from "framer-motion";
-import { FaReact } from "react-icons/fa6";
 import "./../styles/Pages.css";
 import AnimatedFigures from "../components/AnimatedFigures";
 
