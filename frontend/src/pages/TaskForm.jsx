@@ -42,7 +42,7 @@ const TaskForm = () => {
                     <input
                       type="text"
                       name="title"
-                      placeholder="Write a title"
+                      placeholder="Dale un nombre a tu tarea"
                       onChange={handleChange}
                       value={values.title}
                       className="mb-10 mt-5 bg-gray-800 rounded-md px-4 py-2 text-white focus:outline-none focus:ring focus:border-teal-500"
@@ -52,7 +52,7 @@ const TaskForm = () => {
                     <textarea
                       name="description"
                       rows="3"
-                      placeholder="Write a description"
+                      placeholder="Coloca una descripción"
                       onChange={handleChange}
                       value={values.description}
                       className="mt-5 bg-gray-800 rounded-md px-4 py-2 text-white focus:outline-none focus:ring focus:border-teal-500"
