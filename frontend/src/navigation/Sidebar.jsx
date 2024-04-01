@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import { MdOutlineDashboard } from "react-icons/md";
-import { RiSettings4Line } from "react-icons/ri";
-import { TbReportAnalytics } from "react-icons/tb";
-import { AiOutlineHeart } from "react-icons/ai";
 import { FiMessageSquare, FiFolder, FiUsers, FiBox } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { FaDocker } from "react-icons/fa6";
