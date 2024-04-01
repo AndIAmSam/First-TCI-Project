@@ -6,28 +6,6 @@ import AnimatedFigures from "../components/AnimatedFigures";
 
 const Score = () => {
   // Array de integrantes del equipo
-  const teamMembers = [
-    {
-      name: "Samuel Flores",
-      score: "",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-      name: "Samuel Flores",
-      score: "",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-      name: "Samuel Flores",
-      score: "",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-      name: "Samuel Flores",
-      score: "",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-  ];
 
   return (
     <Layout>
@@ -44,9 +22,9 @@ const Score = () => {
             animate={{ x: 0, y: "0vw", opacity: 1, scale: 1 }}
             transition={{ duration: 0.7 }}
           >
-            <h2 className="text-white text-4xl font-semibold mb-28">Sí</h2>
+            <h2 className="text-white text-4xl font-semibold mb-28"></h2>
             <motion.div className="mb-6">
-              <h1>No</h1>
+              <h1></h1>
             </motion.div>
           </motion.div>
         </motion.div>
